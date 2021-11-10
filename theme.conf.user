@@ -1,7 +1,8 @@
 [General]
-type=color
+type=image
 color=#1b1c16
-background="components/artwork/background.jpg"
+background="components/artwork/background2.jpg"
+
 [clock]
 time.font=IBM Plex Serif Medium
 date.font=IBM Plex Serif Medium
