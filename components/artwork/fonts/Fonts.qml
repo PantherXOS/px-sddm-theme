@@ -14,38 +14,16 @@
  *   You should have received a copy of the GNU Library General Public
  *   License along with this program; if not, see <https://www.gnu.org/licenses>.
  */
- 
+
 import QtQuick 2.8
 
 Item {
 
-    // Add fonts with new line : 
+    // Add fonts with new line :
     // FontLoader { id: fontName; source: "xxx.ttf"; }
     // ...
     // (https://doc.qt.io/qt-5/qml-qtquick-fontloader.html)
 
     FontLoader { id: pacifico; source: "Pacifico-Regular.ttf" }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    FontLoader { id: ibmplex; source: "IBMPlexSerif-Medium.odf" }
 }
