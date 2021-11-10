@@ -25,6 +25,9 @@ Item {
     width: clock.implicitWidth
     height: clock.implicitHeight
 
+    anchors.top: parent.top
+    anchors.margins: 100
+
     ColumnLayout {
         id: clock
         property date dateTime: new Date()
