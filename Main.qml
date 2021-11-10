@@ -33,25 +33,37 @@ Skel {
     menu: Item { id: menu; anchors.fill: parent }
     free: Item { id: free; anchors.fill: parent }
 
-    
-    
+
+
     // ===================
     // Objects
     // ===================
 
     Screensaver { id: screensaver; anchors.fill: parent }
-    
+
     Login {
         id: login
         parent: isFull ? free : menu
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
-        visible: isMini ? false : true 
+        visible: isMini ? false : true
         //Rectangle {anchors.fill: parent; color: "red"; opacity: 0.1} //DEBUG
     }
 
     Clock { id: clock; parent: free }
-        
+
+    Image {
+        opacity: 0.5
+        fillMode: Image.PreserveAspectFit
+        height: 50
+        anchors {
+            bottom: parent.bottom
+            left: parent.left
+            margins: 15
+        }
+        source: "./components/artwork/logo.svg"
+    }
+
     // Session and Keyboard buttons.
     RowLayout {
         id: combobox
